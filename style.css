@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nunito';   
+}
+
+#container{
+    height: 100vh;
+    width: 100vw;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+nav h5{
+    display: none;
+}
+
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    height: 22px;
+    width: 22px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#nav-part2 h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#nav-part2 h4 span{
+    color: rgb(86, 86, 88);
+    margin-left: 15px;
+}
+
+#nav2{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 0 50px;
+}
+
+#nav2 h3{
+    font-size: 18px;
+    text-transform: uppercase ;
+    font-weight: 600;
+}
+
+#content{
+    height: calc(100% - 150px);
+    width: 100%;
+}
+
+#text-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem h1{
+    font-family: Montserrat;
+    font-size:100px ;
+    font-weight: 300;
+}
+
+#image-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+#image-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 30%;
+}
+
+@media (max-width:600px) {
+    nav{
+    height: 75px;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h5{
+    display: initial;
+}
+
+nav h5 i{
+    font-size: 20px;
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#nav-part2 h4{
+    display: none;
+}
+
+#nav-part2 h4:nth-child(1){
+    display: initial;
+}
+
+#nav-part2 h4 span{
+    margin-left: 10px;
+}
+
+
+#nav2{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    padding: 0 10px;
+}
+
+#nav2 h3{
+    font-size: 2.5vw;
+    text-transform: uppercase ;
+    font-weight: 500;
+    color: #444;
+}
+
+
+#content{
+    height: calc(100% - 95px);
+    width: 100%;
+}
+
+#text-content{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 4px;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem h1{
+    font-family: Montserrat;
+    font-size:17vw ;
+    font-weight: 300;
+}
+
+#image-content{
+    height: 70%;
+}
+
+#image-content img{
+    object-position: 50% 50%;
+}}
